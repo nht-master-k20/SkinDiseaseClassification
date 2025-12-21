@@ -89,18 +89,15 @@ https://www.nature.com/articles/s41597-024-03743-w
     │   └── ISICDataset.py
     │
     ├── models/
-    │   ├── EfficientNetB3_v1.py
-    │   ├── EfficientNetB3_v2.py
-    │   └── EfficientNetB3_v3.py
+    │   ├── v1.py
+    │   ├── v2.py
+    │   ├── v3.py
+    │   ├── v4.py
+    │   └── v5.py
     │
-    ├── dataset/
-    │   ├── ISIC_2024_Training_Input/
-    │   └── ISIC_2024_Training_GroundTruth.csv
-    │
-    └── dataset_splits/
-        ├── processed_train.csv
-        ├── processed_val.csv
-        └── processed_test.csv
+    └── dataset/
+        ├── ISIC_2024_Training_Input/
+        └── ISIC_2024_Training_GroundTruth.csv
 
 ------------------------------------------------------------------------
 
@@ -124,12 +121,12 @@ BiasInit + Dynamic Threshold:
 
     python main.py v3
 
+BiasInit + Dynamic Threshold + TTA:
+
+    python main.py v4
+
+Sampler + Dynamic Threshold + TTA:
+
+    python main.py v5
+
 ------------------------------------------------------------------------
-
-## 📑 8. Tài liệu tham khảo
-
--   SkinExplainer Dataset (Nature)
--   EfficientNet
--   Albumentations
--   PyTorch Docs
--   MLflow Docs
