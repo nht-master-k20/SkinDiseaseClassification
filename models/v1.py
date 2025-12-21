@@ -17,7 +17,7 @@ from torch.utils.data import DataLoader
 from torch.amp import GradScaler, autocast
 from sklearn.metrics import f1_score, accuracy_score, classification_report, roc_auc_score
 from sklearn.utils.class_weight import compute_class_weight
-from scripts.ISICDataset2 import ISICDataset
+from scripts.ISICDataset import ISICDataset
 
 
 # --- 0. SEED CONTROL ---

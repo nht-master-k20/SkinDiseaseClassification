@@ -37,7 +37,7 @@ def run_task(task_name):
     seed_everything(CONFIG['seed'])
 
     if task_name == 'data':
-        from scripts.ReadData2 import ReadData
+        from scripts.ReadData import ReadData
         print(f"   ⚙️ [DATA] Running Clean -> Resize -> Split")
         ReadData.run()
         return

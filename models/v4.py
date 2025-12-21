@@ -16,7 +16,7 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
 # Import Dataset
-from scripts.ISICDataset2 import ISICDataset
+from scripts.ISICDataset import ISICDataset
 
 
 # --- 0. SEED CONTROL ---

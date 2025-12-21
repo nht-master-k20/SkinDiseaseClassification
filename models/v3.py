@@ -16,7 +16,7 @@ import mlflow.pytorch
 from torch.utils.data import DataLoader, WeightedRandomSampler
 from torch.cuda.amp import GradScaler, autocast
 from sklearn.metrics import f1_score, accuracy_score, classification_report, roc_auc_score, recall_score
-from scripts.ISICDataset2 import ISICDataset
+from scripts.ISICDataset import ISICDataset
 
 
 # --- 0. SEED CONTROL ---
