@@ -35,21 +35,9 @@ https://www.nature.com/articles/s41597-024-03743-w
 
 ### 1️⃣ Xử lý dữ liệu
 
--   Load metadata
--   Stratified split Train/Val/Test
--   Hair removal + resize 300x300
--   Clean đa luồng bằng ProcessPoolExecutor
-
 ### 2️⃣ Augmentation
 
--   Chỉ áp dụng cho lớp malignant
--   Albumentations: flip, rotate, distortion, color jitter
--   Sinh ảnh offline tăng số lượng mẫu thiểu số
-
 ### 3️⃣ Huấn luyện mô hình
-- **v1**: CrossEntropyLoss baseline
-- **v2**: Focal Loss + WeightedRandomSampler
-- **v3**: Focal + Sampler + BiasInit + Dynamic Threshold
 
 ### 4️⃣ Tracking
 
